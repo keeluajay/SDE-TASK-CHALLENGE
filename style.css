@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+#login-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 400px;
+  text-align: center;
+}
+
+#login-section input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#login-section button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#login-section button:hover {
+  background-color: #218838;
+}
+
+#app-section {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+h2, h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#app-section input,
+#app-section button {
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+#projects-container div {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#projects-container div:hover {
+  background-color: #ced4da;
+}
+
+#project-detail {
+  margin-top: 20px;
+}
+
+#edit-project-title {
+  padding: 10px;
+  width: calc(100% - 20px);
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#todos-container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f1f3f5;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.todo-item span {
+  flex: 1;
+}
+
+.todo-item button {
+  background-color: #6c757d;
+  color: white;
+  margin-left: 5px;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.todo-item button:hover {
+  background-color: #5a6268;
+}
+
+.todo-item button:first-of-type {
+  background-color: #28a745;
+}
+
+.todo-item button:first-of-type:hover {
+  background-color: #218838;
+}
+
+#project-detail button:last-of-type {
+  background-color: #ffc107;
+}
+
+#project-detail button:last-of-type:hover {
+  background-color: #e0a800;
+}
+
+#project-detail button:nth-last-of-type(2) {
+  background-color: #17a2b8;
+}
+
+#project-detail button:nth-last-of-type(2):hover {
+  background-color: #138496;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo Project Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login-section">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username">
+    <input type="password" id="password" placeholder="Password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div id="app-section" style="display: none;">
+    <h2>Todo Project Manager</h2>
+    <input type="text" id="project-title" placeholder="New Project Title">
+    <button onclick="createProject()">Create Project</button>
+
+    <h3>Projects</h3>
+    <div id="projects-container"></div>
+
+    <div id="project-detail" style="display: none;">
+      <h3>Project Details</h3>
+      <div>
+        <label>Project Title: </label>
+        <input id="edit-project-title" onchange="updateProjectTitle(event)" />
+      </div>
+      <div id="todos-container"></div>
+      <input type="text" id="todo-description" placeholder="New Todo Description">
+      <button onclick="addTodo()">Add Todo</button>
+      <button onclick="exportProjectAsGist()">Export as Gist</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
